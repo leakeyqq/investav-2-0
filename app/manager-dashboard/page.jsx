@@ -8,12 +8,10 @@ import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import Navbar from "@/components/navbar"
 
 export default function ManagerDashboardPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-1 grid items-start gap-4 p-4 sm:px-6 sm:py-6 md:gap-8">
         <div className="mx-auto w-full max-w-6xl space-y-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

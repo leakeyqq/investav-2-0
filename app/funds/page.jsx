@@ -16,33 +16,6 @@ import mmfSamples from "./../../storage/sample-mmfs.json"
 export default function FundsPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b">
-        <Link className="flex items-center gap-2 font-semibold" href="/">
-          <span>FundHub</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/funds">
-            Explore Funds
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 hidden sm:inline-flex"
-            href="/dashboard"
-          >
-            Dashboard
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 hidden sm:inline-flex"
-            href="/profile"
-          >
-            Profile
-          </Link>
-          <Link href="/profile" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-sm font-medium">
-              JD
-            </div>
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1 grid items-start gap-4 p-4 sm:px-6 sm:py-6 md:gap-8">
         <div className="mx-auto w-full max-w-6xl space-y-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

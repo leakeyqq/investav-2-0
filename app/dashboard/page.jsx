@@ -9,34 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 export default function DashboardPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b">
-        <Link className="flex items-center gap-2 font-semibold" href="/">
-          <TrendingUp className="h-6 w-6" />
-          <span>Hui Finance</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/funds">
-            Explore Funds
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/dashboard">
-            Dashboard
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/profile">
-            Profile
-          </Link>
-        </nav>
-        <div className="ml-4 flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="relative">
-            <Bell className="h-5 w-5" />
-            <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary"></span>
-            <span className="sr-only">Notifications</span>
-          </Button>
-          <Button variant="ghost" size="icon">
-            <Settings className="h-5 w-5" />
-            <span className="sr-only">Settings</span>
-          </Button>
-        </div>
-      </header>
       <main className="flex-1 grid items-start gap-4 p-4 sm:px-6 sm:py-6 md:gap-8">
         <div className="mx-auto w-full max-w-6xl space-y-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

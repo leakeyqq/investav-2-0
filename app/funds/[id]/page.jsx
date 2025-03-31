@@ -20,11 +20,6 @@ export default function FundDetailsPage({ params }) {
   if (!fund) {
     return (
       <div className="flex flex-col min-h-screen">
-        <header className="px-4 lg:px-6 h-16 flex items-center border-b">
-          <Link className="flex items-center gap-2 font-semibold" href="/">
-            <span>FundHub</span>
-          </Link>
-        </header>
         <main className="flex-1 grid place-items-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold">Fund Not Found</h1>

@@ -167,22 +167,6 @@ export function FundManagePage({ params }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b">
-        <Link className="flex items-center gap-2 font-semibold" href="/">
-          <span>Hui Finance</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/funds">
-            Explore Funds
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/manager-dashboard">
-            Manager Dashboard
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/profile">
-            Profile
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1 grid items-start gap-4 p-4 sm:px-6 sm:py-6 md:gap-8">
         <div className="mx-auto w-full max-w-6xl space-y-6">
           <div className="flex flex-col gap-2">
