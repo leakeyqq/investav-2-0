@@ -44,9 +44,9 @@ export default function ManagerDashboardPage() {
           </div>
 
           <Tabs defaultValue="funds">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="funds">My Funds</TabsTrigger>
-              <TabsTrigger value="proposals">Pending Proposals</TabsTrigger>
+              {/* <TabsTrigger value="proposals">Pending Proposals</TabsTrigger> */}
               <TabsTrigger value="investors">Investors</TabsTrigger>
             </TabsList>
             <TabsContent value="funds" className="space-y-6">

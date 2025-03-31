@@ -30,8 +30,13 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
     <header className="px-4 lg:px-6 h-16 flex items-center border-b sticky top-0 bg-background z-50 shadow-sm">
       {/* Logo */}
       <Link className="flex items-center gap-2 font-semibold" href="/">
-        <TrendingUp className="h-6 w-6 text-primary" />
-        <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold">FundHub</span>
+        {/* <TrendingUp className="h-6 w-6 text-primary" /> */}
+        {/* <img 
+        src="/logo-no-background.svg" 
+        alt="Company Logo"
+        className="h-32 w-32 object-contain" 
+      /> */}
+        <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold">Hui Finance</span>
       </Link>
 
       {/* Desktop Navigation */}
@@ -131,7 +136,7 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <TrendingUp className="h-6 w-6" />
-                  <span>FundHub</span>
+                  <span>Hui Finance</span>
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                   <X className="h-5 w-5" />

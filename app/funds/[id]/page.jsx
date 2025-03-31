@@ -48,7 +48,7 @@ export default function FundDetailsPage({ params }) {
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-16 flex items-center border-b">
         <Link className="flex items-center gap-2 font-semibold" href="/">
-          <span>FundHub</span>
+          <span>Hui Finance</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="/funds">

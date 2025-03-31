@@ -41,14 +41,20 @@ export function HomePage() {
                   </Link>
                 </div>
               </div>
+
+
               <div className="flex items-center justify-center">
-                <div className="relative w-full max-w-[500px] aspect-square">
-                  <div className="absolute inset-0 bg-accent/30 rounded-lg transform rotate-3 scale-105"></div>
-                  <div className="absolute inset-0 bg-white/90 rounded-lg border shadow-lg flex items-center justify-center">
-                    <BarChart3 className="h-32 w-32 text-primary" />
-                  </div>
-                </div>
-              </div>
+  <div className="relative w-full max-w-[500px] aspect-square">
+    <div className="absolute inset-0 bg-accent/30 rounded-lg transform rotate-3 scale-105"></div>
+    <div className="absolute inset-0 bg-white/90 rounded-lg border shadow-lg overflow-hidden">
+      <img 
+        src="logo-no-background.png" 
+        alt="Company Logo"
+        className="w-full h-full object-contain p-6" 
+      />
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </section>
@@ -72,7 +78,7 @@ export function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold">Fund Creation</h3>
                 <p className="text-center text-muted-foreground">
-                  Fund managers can create money market funds with customized parameters and strategies focused on
+                  Fund managers can create tokenized money market funds with customized strategies focused on
                   liquidity and stability.
                 </p>
               </div>
@@ -111,7 +117,7 @@ export function HomePage() {
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <div className="inline-block rounded-full bg-accent/20 px-3 py-1 text-sm font-medium text-accent-600 mb-2">
-                Why choose FundHub
+                Why choose Hui Finance
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl max-w-[800px]">
                 Benefits for everyone in the Ecosystem
