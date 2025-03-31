@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+
+    --primary: 85 70% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 45 95% 50%;
+    --secondary-foreground: 0 0% 12%;
+
+    --muted: 85 70% 95%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 45 95% 50%;
+    --accent-foreground: 0 0% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 85 70% 35%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 85 70% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 45 95% 50%;
+    --secondary-foreground: 0 0% 12%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 45 95% 50%;
+    --accent-foreground: 0 0% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 85 70% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for our spicy theme */
+.spicy-gradient {
+  background: linear-gradient(135deg, #4caf50 0%, #ffeb3b 100%);
+}
+
+.spicy-card-hover {
+  transition: all 0.3s ease;
+}
+
+.spicy-card-hover:hover {
+  box-shadow: 0 10px 25px -5px rgba(76, 175, 80, 0.1), 0 10px 10px -5px rgba(255, 235, 59, 0.2);
+  transform: translateY(-2px);
+  border-color: rgba(76, 175, 80, 0.5);
+}
+
+.spicy-button {
+  background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+  transition: all 0.3s ease;
+}
+
+.spicy-button:hover {
+  background: linear-gradient(90deg, #43a047 0%, #7cb342 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.spicy-accent {
+  background: linear-gradient(90deg, #ffeb3b 0%, #ffc107 100%);
+  transition: all 0.3s ease;
+}
+
+.spicy-accent:hover {
+  background: linear-gradient(90deg, #fdd835 0%, #ffb300 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 235, 59, 0.2);
+}
+
