@@ -4,6 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Bell, Menu, Settings, Shield, TrendingUp, X } from "lucide-react"
+import WalletConnector from "@/components/myConnectWallet"
+
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -45,6 +47,7 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
             {link.label}
           </Link>
         ))}
+        <WalletConnector/>
       </nav>
 
       {/* User Profile & Notifications (Desktop) */}
@@ -148,6 +151,8 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
                     {link.label}
                   </Link>
                 ))}
+              <WalletConnector/>
+
               </nav>
 
               {/* Mobile User Controls */}

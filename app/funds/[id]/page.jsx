@@ -1,5 +1,8 @@
+"use client"
 import Link from "next/link"
 import { ArrowLeft, ChevronRight, DollarSign, LineChart, Users } from "lucide-react"
+
+import InvestButton from "@/components/investButton";
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -85,9 +88,10 @@ export default function FundDetailsPage({ params }) {
                   Managed by {fund["fund-manager"]} • {fund.country}
                 </p>
               </div>
-              <Link href={`/funds/${fundId}/subscribe`}>
-                <Button size="lg">Subscribe to Fund</Button>
-              </Link>
+              {/* <Link href={`/funds/${fundId}/subscribe`}>
+                <Button size="lg">Invest now</Button>
+              </Link> */}
+              <InvestButton fundId={fundId} />
             </div>
           </div>
 
