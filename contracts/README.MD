@@ -1,22 +1,3 @@
-Hui Finance protocol
-
-Main contract deployed on Hedera testnet which is handling 
-Fund managers and checking their compliance
-
-These are the tokenized money market funds currently deployed on Hedera testnet
-
-CDG Capital Money Market Fund
-Account ID: 0.0.5806334
-
-Zidii Money Market Fund
-Account ID: 0.0.5806342
-
-JPMorgan Prime Money Market Fund
-Account ID: 0.0.5806362
-
-Macquarie Cash Management Trust
-Account ID: 0.0.5806379
-
 
 # 🌊 Hui Finance Protocol
 
@@ -50,5 +31,5 @@ flowchart LR
     A[Fund Manager] --> B[Hui Compliance Engine]
     B --> C{KYC/AML Pass?}
     C -->|Approved| D[Mint HTS Tokens]
-    C -->|Rejected| E[Alert Regulators]
+    C -->|Rejected| E[Add to fraud list]
     D --> F[Investor Dashboard]
