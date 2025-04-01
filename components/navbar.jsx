@@ -20,7 +20,7 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
     { href: "/funds", label: "Explore Funds" },
     { href: "/dashboard", label: "Dashboard" },
     { href: "/manager-dashboard", label: "Manager Dashboard" },
-    { href: "/about", label: "About" },
+    // { href: "/about", label: "About" },
   ]
 
   // Check if a link is active
@@ -30,13 +30,11 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
     <header className="px-4 lg:px-6 h-16 flex items-center border-b sticky top-0 bg-background z-50 shadow-sm">
       {/* Logo */}
       <Link className="flex items-center gap-2 font-semibold" href="/">
-        {/* <TrendingUp className="h-6 w-6 text-primary" /> */}
-        {/* <img 
+        <img 
         src="/logo-no-background.svg" 
         alt="Company Logo"
-        className="h-32 w-32 object-contain" 
-      /> */}
-        <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold">Hui Finance</span>
+        className="h-80 w-80 object-contain" 
+      />
       </Link>
 
       {/* Desktop Navigation */}
@@ -135,12 +133,12 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
                   href="/"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <TrendingUp className="h-6 w-6" />
-                  <span>Hui Finance</span>
+                    <img 
+                    src="/logo-no-background.svg" 
+                    alt="Company Logo"
+                    className="w-100 object-contain" 
+                  />
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                  <X className="h-5 w-5" />
-                </Button>
               </div>
 
               <nav className="flex flex-col gap-4">
@@ -156,7 +154,7 @@ export function MainNavbar({ showNotifications = true, showUserProfile = true, i
                     {link.label}
                   </Link>
                 ))}
-              <WalletConnector/>
+              {/* <WalletConnector/> */}
 
               </nav>
 

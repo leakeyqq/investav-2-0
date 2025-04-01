@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { ArrowLeft, ChevronRight, DollarSign, LineChart, Users } from "lucide-react"
+import { ArrowLeft, ArrowRight, ChevronRight, DollarSign, LineChart, Users } from "lucide-react"
 
 import InvestButton from "@/components/investButton";
 
@@ -46,22 +46,6 @@ export default function FundDetailsPage({ params }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b">
-        <Link className="flex items-center gap-2 font-semibold" href="/">
-          <span>Hui Finance</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/funds">
-            Explore Funds
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/dashboard">
-            Dashboard
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/profile">
-            Profile
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1 grid items-start gap-4 p-4 sm:px-6 sm:py-6 md:gap-8">
         <div className="mx-auto w-full max-w-6xl space-y-6">
           <div className="flex flex-col gap-2">
@@ -78,9 +62,20 @@ export default function FundDetailsPage({ params }) {
                 <div className="flex items-center gap-2">
                   <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{fund["fund-name"]}</h1>
                   <Badge className="bg-green-100 text-green-800">Licensed</Badge>
+
                 </div>
                 <p className="text-muted-foreground">
                   Managed by {fund["fund-manager"]} • {fund.country}
+                </p>
+                <p>
+                  <div className="">
+                  <Link href={`https://hashscan.io/testnet/token/${fund["token-id"]} `}  target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="rounded-full px-8 spicy-button border-0">
+                      View on Hedera
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
                 </p>
               </div>
               {/* <Link href={`/funds/${fundId}/subscribe`}>
@@ -88,6 +83,8 @@ export default function FundDetailsPage({ params }) {
               </Link> */}
               <InvestButton fundId={fundId} />
             </div>
+
+
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -119,6 +116,18 @@ export default function FundDetailsPage({ params }) {
                   </span>
                 </div>
               </CardContent>
+
+              <CardContent>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      2024 yield: {fund["previous-yield"]}% APY
+                    </span>
+                  </div>
+                  {/* <Progress value={fund["subscription-rate"]} className="h-2" /> */}
+                </div>
+              </CardContent>
+
             </Card>
             <Card>
               <CardHeader className="pb-2">

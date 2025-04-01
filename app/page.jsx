@@ -19,7 +19,7 @@ export function HomePage() {
                     Your entry to money market funds
                   </h1>
                   <p className="max-w-[600px] text-white/80 md:text-xl">
-                    A platform where fund managers can create investment funds and investors can invest and earn stable
+                    A platform where regulated fund managers can create investment funds and investors can deposit and earn stable
                     yields.
                   </p>
                 </div>
@@ -45,8 +45,8 @@ export function HomePage() {
 
               <div className="flex items-center justify-center">
   <div className="relative w-full max-w-[500px] aspect-square">
-    <div className="absolute inset-0 bg-accent/30 rounded-lg transform rotate-3 scale-105"></div>
-    <div className="absolute inset-0 bg-white/90 rounded-lg border shadow-lg overflow-hidden">
+    <div className="absolute inset-0  rounded-lg transform rotate-3 scale-105"></div>
+    <div className="absolute inset-0 rounded-lg border shadow-lg overflow-hidden">
       <img 
         src="logo-no-background.png" 
         alt="Company Logo"
@@ -195,7 +195,7 @@ export function HomePage() {
                         <p className="text-muted-foreground">
                           Invest in opportunities worldwide without geographical limitations. An investor from US can
                           invest in Kenya treasuries and corporate debt through a money market fund in Kenya. The
-                          opposite is true for an investor in Kenya.
+                          opposite is also possible.
                         </p>
                       </div>
                     </div>

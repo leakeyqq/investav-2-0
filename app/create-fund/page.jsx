@@ -239,7 +239,7 @@ export default function CreateFundPage() {
               </Link>
             </div>
             <div className="flex flex-col gap-1">
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Create New Fund</h1>
+              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Create new fund</h1>
               <p className="text-muted-foreground">Set up a new investment fund for investors to join</p>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function CreateFundPage() {
           <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="details" id="details-tab">
-                Fund Details
+                Fund details
               </TabsTrigger>
               <TabsTrigger value="compliance" id="compliance-tab">
                 Compliance
@@ -260,7 +260,7 @@ export default function CreateFundPage() {
             <TabsContent value="details">
               <Card>
                 <CardHeader>
-                  <CardTitle>Fund Details</CardTitle>
+                  <CardTitle>Fund details</CardTitle>
                   <CardDescription>Provide the basic information about your fund</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -284,7 +284,7 @@ export default function CreateFundPage() {
                   <div className="space-y-2">
                     <Label htmlFor="target-size">Target Fund Size</Label>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm">$</span>
+                      <span className="text-sm">USDC</span>
                       <Input id="target-size" type="number" placeholder="5000000" />
                     </div>
                   </div>
@@ -292,7 +292,7 @@ export default function CreateFundPage() {
                   <div className="space-y-2">
                     <Label htmlFor="min-investment">Minimum Investment</Label>
                     <div className="flex items-center gap-2">
-                      <span className="text-sm">$</span>
+                      <span className="text-sm">USDC</span>
                       <Input id="min-investment" type="number" placeholder="5" />
                     </div>
                     <p className="text-xs text-muted-foreground">
@@ -317,10 +317,10 @@ export default function CreateFundPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="liquidity">Liquidity Terms</Label>
+                    <Label htmlFor="liquidity">Yield distribution</Label>
                     <Select>
                       <SelectTrigger id="liquidity">
-                        <SelectValue placeholder="Select liquidity terms" />
+                        <SelectValue placeholder="Select distribution dates" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="daily">Daily</SelectItem>
@@ -502,9 +502,8 @@ export default function CreateFundPage() {
                 </CardFooter>
               </Card>
             </TabsContent>
-            <div className="mt-6">
-              <MoneyMarketInfoComponent />
-            </div>
+
+
 
             <TabsContent value="review">
               <Card>
@@ -526,11 +525,11 @@ export default function CreateFundPage() {
                       </div>
                       <div className="space-y-1">
                         <p className="text-sm font-medium">Target Size</p>
-                        <p className="text-muted-foreground">5,000,000 $</p>
+                        <p className="text-muted-foreground">5,000,000 USDC</p>
                       </div>
                       <div className="space-y-1">
                         <p className="text-sm font-medium">Minimum Investment</p>
-                        <p className="text-muted-foreground">5 $</p>
+                        <p className="text-muted-foreground">5 USDC</p>
                       </div>
                       <div className="space-y-1">
                         <p className="text-sm font-medium">Management Fee</p>
@@ -583,6 +582,11 @@ export default function CreateFundPage() {
                 </CardFooter>
               </Card>
             </TabsContent>
+
+            <div className="mt-6">
+              <MoneyMarketInfoComponent />
+            </div>
+
           </Tabs>
         </div>
       </main>

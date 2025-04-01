@@ -5,7 +5,7 @@
       "fund-manager": "CDG Capital",
       "fund-manager-info": "CDG Capital is the investment banking arm of Morocco's Caisse de Dépôt et de Gestion (CDG Group), established in 1959. As one of North Africa's largest institutional investors with over $20B AUM, CDG Capital brings 60+ years of experience in Moroccan capital markets. The firm pioneered Sharia-compliant investment products in the region and manages Morocco's sovereign wealth fund. Their money market team is led by Fatima Zahra Bensalah, a 25-year veteran of Moroccan fixed income markets.",
       "country": "Morocco",
-      "previous-yield": 3.8,
+      "previous-yield": 6.8,
       "total-invested": 12500000,
       "target": 20000000,
       "subscription-rate": 65,
@@ -13,7 +13,8 @@
       "total-investors": 342,
       "subscription-date": "2025-05-15",
       "a-brief-investment-strategy": "Low-risk investments in short-term debt securities",
-      "full-details-investment-strategy": "The CDG Capital Money Market Fund focuses on preserving capital while providing competitive yields through investments in high-quality, short-term Moroccan debt instruments including treasury bills, bank deposits, and commercial paper with maturities under 180 days. The fund maintains strict credit quality standards and liquidity parameters."
+      "full-details-investment-strategy": "The CDG Capital Money Market Fund focuses on preserving capital while providing competitive yields through investments in high-quality, short-term Moroccan debt instruments including treasury bills, bank deposits, and commercial paper with maturities under 180 days. The fund maintains strict credit quality standards and liquidity parameters.",
+      "token-id":"0.0.5806334"
     },
     {
       "id": 2,
@@ -21,7 +22,7 @@
       "fund-manager": "Standard Investment Bank (SIB)",
       "fund-manager-info": "Standard Investment Bank (SIB) is a Nairobi-based boutique investment bank founded in 2004, specializing in East African fixed income markets. With $1.2B AUM, SIB has won multiple awards including 'Best Money Market Fund Manager in Kenya' (2022, 2023). Their team of 12 portfolio managers combines local market expertise with global best practices. CEO James Mwangi previously served as Central Bank of Kenya's Director of Financial Markets before joining SIB in 2010.",
       "country": "Kenya",
-      "previous-yield": 4.2,
+      "previous-yield": 9.2,
       "total-invested": 4200000,
       "target": 8000000,
       "subscription-rate": 78,
@@ -29,7 +30,8 @@
       "total-investors": 215,
       "subscription-date": "2025-06-01",
       "a-brief-investment-strategy": "Long-term growth through diversified equity investments",
-      "full-details-investment-strategy": "Zidii MMF invests primarily in Kenyan government securities (80%) and high-grade corporate debt (20%), with a focus on instruments maturing within 12 months. The fund employs an active duration management strategy to optimize returns while maintaining daily liquidity. All investments are rated AA- or better by local credit rating agencies."
+      "full-details-investment-strategy": "Zidii MMF invests primarily in Kenyan government securities (80%) and high-grade corporate debt (20%), with a focus on instruments maturing within 12 months. The fund employs an active duration management strategy to optimize returns while maintaining daily liquidity. All investments are rated AA- or better by local credit rating agencies.",
+      "token-id": "0.0.5806342" 
     },
     {
       "id": 3,
@@ -45,7 +47,9 @@
       "total-investors": 587,
       "subscription-date": "2025-04-20",
       "a-brief-investment-strategy": "Early-stage investments in technology startups",
-      "full-details-investment-strategy": "JPMXX invests exclusively in U.S. dollar-denominated money market instruments with average maturity of 60 days. The portfolio consists of U.S. Treasury securities (40%), federal agency notes (30%), and high-quality commercial paper from Fortune 500 companies (30%). The fund maintains a $1 NAV and offers same-day liquidity."
+      "full-details-investment-strategy": "JPMXX invests exclusively in U.S. dollar-denominated money market instruments with average maturity of 60 days. The portfolio consists of U.S. Treasury securities (40%), federal agency notes (30%), and high-quality commercial paper from Fortune 500 companies (30%). The fund maintains a $1 NAV and offers same-day liquidity.",
+      "token-id": "0.0.5806362" 
+    
     },
     {
       "id": 4,
@@ -53,7 +57,7 @@
       "fund-manager": "Macquarie Group",
       "fund-manager-info": "Macquarie Group (ASX: MQG) is Australia's largest investment bank with $570B AUM globally. Their Cash Management Trust launched in 1985 was Australia's first money market fund. The cash management team is led by Michael Coleman, who joined Macquarie in 2003 after serving as Reserve Bank of Australia's Head of Money Markets. Macquarie's AAA-rated balance sheet provides additional security, and their funds have never broken the buck in 38+ years of operation.",
       "country": "Australia",
-      "previous-yield": 3.8,
+      "previous-yield": 4.8,
       "total-invested": 12500000,
       "target": 18000000,
       "subscription-rate": 65,
@@ -61,7 +65,8 @@
       "total-investors": 428,
       "subscription-date": "2025-07-10",
       "a-brief-investment-strategy": "Low-risk investments in short-term debt securities",
-      "full-details-investment-strategy": "This fund provides exposure to Australian dollar money markets through a diversified portfolio of bank bills (50%), government securities (30%), and high-quality corporate debt (20%). The investment team actively manages duration between 30-90 days to optimize yield while maintaining capital preservation. All holdings are rated A1+ by S&P."
+      "full-details-investment-strategy": "This fund provides exposure to Australian dollar money markets through a diversified portfolio of bank bills (50%), government securities (30%), and high-quality corporate debt (20%). The investment team actively manages duration between 30-90 days to optimize yield while maintaining capital preservation. All holdings are rated A1+ by S&P.",
+      "token-id": "0.0.5806379"
     }
   ]
 
