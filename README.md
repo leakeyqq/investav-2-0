@@ -5,7 +5,6 @@
 ## Your Entry to Money Market Funds
 A platform where regulated fund managers can create investment funds and investors can deposit and earn stable yields.
 
-[Create a Fund](#) | [Explore Funds](#)
 
 ## How It Works
 Our platform connects fund managers with investors in a collaborative and efficient way.
