@@ -4,7 +4,7 @@
 ## Contract Address on Hedera 0.0.5806756
 
 <p align="center">
-  <img src="https://huifinance.vercel.app/logo-no-background.svg" width="100" alt="Hedera Logo">
+  <img src="https://huifinance.vercel.app/logo-no-background.png" width="100" alt="Hedera Logo">
   <br>
   <em>Next-generation compliant money markets on Hedera</em>
 </p>
